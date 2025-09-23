@@ -1,0 +1,938 @@
+/*custom css starts here*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: montserrat_reg;
+	src: url(../webfonts/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: poppins_reg;
+	src: url(../webfonts/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: poppins_medium;
+	src: url(../webfonts/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+	font-family: Source_Sans_Pro_reg;
+	src: url(../webfonts/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: opensans_bold;
+	src: url(../webfonts/fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+body {
+	background: #f5f5f5;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h3 {
+	font-family: poppins_reg;
+	font-size: 30px;
+	color: #333333;
+	position: relative;
+}
+
+h3::after {
+	content: "";
+	position: absolute;
+	top: 52px;
+	left: 50%;
+	width: 50px;
+	height: 2px;
+	background: #cccccc;
+	transform: translateX(-50%);
+}
+
+/*custom css ends here*/
+
+
+/*header part css starts here*/
+
+header .navbar {
+	padding: 19px 0px 18px 0px;
+}
+
+header {
+	background: #383838;
+}
+
+header .navbar-nav .nav-item .nav-link {
+	font-family: montserrat_reg;
+	font-size: 15px;
+	color: #ffffff;
+	margin-right: 21px;
+	padding: 13px 0 0 0;
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+	color: #fff;
+	opacity: 0.5;
+}
+
+header .navbar-light .navbar-nav .nav-link:focus {
+	color: #fff;
+}
+
+header .navbar-nav .nav-item:last-child .nav-link {
+	color: #333333;
+	padding: 12px 30px 13px 30px;
+	background: #fff;
+	border-radius: 50px;
+	margin-left: 16px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.active {
+	border-bottom: 2px solid #d7d7d7;
+	color: #ffffff;
+}
+header .navbar-nav .nav-item:last-child .nav-link.active {
+	color: #ffffff;
+	background: transparent;
+}
+
+.navbar-light .navbar-toggler {
+	color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	background: #383838;
+	width: 100%;
+	box-shadow: 0px 0px 10px 0px #0000002e;
+	border-bottom: 1px solid #ededed;
+	transition: 0.3s;
+}
+
+/*header part css ends here*/
+
+
+/*banner part css starts here*/
+
+#banner {
+	background: url(../images/background.png)no-repeat;
+	background-size: cover;
+	padding: 208px 0px 362px 0px;
+}
+
+#banner h1 {
+	font-family: poppins_reg;
+	font-size: 50px;
+	color: #fff;
+}
+
+#banner p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 30px;
+	color: #cccccc;
+	margin: 22px 0px 58px 0px;
+}
+
+#banner i {
+	font-size: 22px;
+	color: #ffffff;
+}
+
+
+#banner i:hover {
+	opacity: 0.4;
+	transition: 0.3s
+}
+
+#banner a {
+	margin-right: 47px
+}
+
+#banner a:last-child {
+	margin: 0px;
+}
+
+/*banner part css ends here*/
+
+
+/*about part css starts here*/
+
+#about {
+	padding: 82px 0px 0px 0px;
+}
+
+#about h3::after {
+	left: 22px;
+}
+
+#about p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #666666;
+	line-height: 33px;
+	margin-top: 41px
+}
+
+#about .about_social {
+	margin-top: 38px;
+}
+
+#about .about_social i {
+	font-size: 18px;
+	color: #ffffff;
+	padding: 7px 7px;
+	background: #333333;
+	border-radius: 50%
+}
+
+#about .about_social p {
+	font-family: poppins_medium;
+	font-size: 18px;
+	color: #333333;
+	margin: 0px
+}
+
+#about .about_social .social {
+	margin-top: 24px
+}
+
+#about a {
+	font-family: montserrat_reg;
+	font-size: 15px;
+	color: #333333;
+	padding: 12px 27px 11px 27px;
+	background: #ffffff;
+	border-radius: 50px;
+	margin-top: 39px;
+	box-shadow: 2px 4px 16px -6px #c1c1c1;
+	border: 1px solid transparent;
+	transition: 0.3s;
+}
+
+#about a:hover {
+	background: #333333;
+	border: 1px solid #f5f5f5;
+	transition: 0.3s;
+	color: #fff;
+}
+
+#about .about_experience {
+	background: #333333;
+	padding: 84px 0 79px 0;
+	margin-top: 43px
+}
+
+#about .about_experience .experiences {
+	padding: 20px 10px 0px 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+#about .about_experience .experiences:hover {
+	transition: 0.3s;
+	box-shadow: 0 0 50px -25px #e9e5dd5c;
+}
+
+#about .about_experience i {
+	font-size: 39px;
+	color: #ffffff;
+}
+
+#about .about_experience h4 {
+	font-family: poppins_reg;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 29px;
+}
+
+#about .about_experience p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #999999;
+	line-height: 30px;
+	margin-top: 15px;
+}
+
+/*about part css ends here*/
+
+
+/*resume part css starts here*/
+
+#resume {
+	padding: 84px 0px 62px 0px;
+}
+
+#resume h3 {
+	text-align: center;
+}
+
+#resume .resume_experience {
+	margin-top: 70px
+}
+
+#resume .resume_experience h5 {
+	font-family: poppins_reg;
+	font-size: 18px;
+	color: #333333;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 11px;
+	margin-bottom: 37px;
+}
+
+#resume .resume_experience h6 {
+	font-family: poppins_medium;
+	font-size: 18px;
+	color: #333333;
+	margin: 33px 0px 0px 0px
+}
+
+#resume .resume_experience span {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #555555;
+}
+
+#resume .resume_experience .date span {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 15px;
+	color: #666666;
+	padding: 0px 8px 0px 3px;
+	border-radius: 20px;
+	border: 1px solid #cccccc;
+}
+
+#resume .resume_experience .date span:hover {
+	box-shadow: 0 0 2px 0px #666666;
+	transition: 0.3s
+}
+
+#resume .resume_experience p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #666666;
+	margin: 10px 0px 0px 0px;
+	line-height: 30px;
+}
+
+#resume h4 {
+	font-family: poppins_medium;
+	font-size: 18px;
+	color: #333333;
+}
+
+#resume .progress-bar {
+	height: 20px;
+	background: #666666;
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	border-radius: 20px;
+	transform: translateY(-50%);
+	text-align: end;
+	padding-right: 10px;
+}
+
+#resume .progress {
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 33px;
+	position: relative;
+	background-color: transparent;
+	border-radius: 30px !important;
+	border: 1px solid #cccccc;
+	height: 28px
+}
+
+#resume a {
+	font-family: montserrat_reg;
+	font-size: 15px;
+	color: #333333;
+	padding: 15px 28px 14px 29px;
+	background: #ffffff;
+	border-radius: 50px;
+	box-shadow: 2px 4px 16px -6px #c1c1c1;
+	line-height: 124px;
+	transition: 0.3s;
+}
+
+#resume a:hover {
+	background: #333333;
+	border: 1px solid #f5f5f5;
+	transition: 0.3s;
+	color: #fff;
+}
+
+
+/*resume part css ends here*/
+
+
+/*testimonial part css starts here*/
+
+#testimonial {
+	background: #313131;
+	padding: 82px 0px 120px 0px;
+}
+
+#testimonial p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #e5e5e5;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-bottom: 26px;
+	padding: 0px 147px;
+	position: relative;
+}
+
+#testimonial p span.one {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 60px;
+	color: #cccccc;
+	position: absolute;
+	top: 6px;
+	left: 12%;
+}
+
+#testimonial p span.two {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 60px;
+	color: #cccccc;
+	position: absolute;
+	bottom: -21px;
+	right: 27%;
+}
+
+#testimonial h4 {
+	font-family: poppins_reg;
+	font-size: 18px;
+	color: #e5e5e5;
+}
+
+#testimonial h5 {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #888888;
+	margin: 12px 0px 16px 0px;
+}
+
+#testimonial i {
+	font-size: 16px;
+	color: #ffffff;
+	padding: 10px;
+	background: #464646;
+	border-radius: 50%;
+}
+
+#testimonial img {
+	display: inline
+}
+
+#testimonial .client_review {
+	margin-top: 64px;
+}
+
+/*testimonial part css ends here*/
+
+
+/*portfolio part css starts here*/
+
+#portfolio {
+	padding: 83px 0px 100px 0px;
+}
+
+#portfolio .portfolios {
+	margin-top: 83px;
+}
+
+#portfolio .portfolios .portfolio_part {
+	position: relative;
+	overflow: hidden;
+}
+
+#portfolio .portfolios .portfolio_part:hover .overlay {
+	opacity: 1;
+	bottom: 0%;
+}
+
+#portfolio .portfolios .overlay {
+	background: #363636;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	bottom: -100%;
+	transition: 0.3s;
+}
+
+#portfolio .portfolios .overlay p {
+	padding-top: 16px;
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#portfolio .portfolios .overlay .content_two {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+#portfolio .portfolios .overlay i {
+	font-size: 18px;
+	color: #333333;
+	width: 40px;
+	border-radius: 50%;
+	background: #ffffff;
+	margin: 51px 0px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#portfolio .last {
+	margin-top: 30px;
+}
+
+
+/*portfolio part css ends here*/
+
+
+/*counter part css starts here*/
+
+#counter {
+	background: #303132;
+	padding: 147px 0px 129px 0px;
+}
+
+#counter .counter {
+	font-family: opensans_bold;
+	font-size: 50px;
+	color: #ffffff;
+}
+
+#counter p {
+	font-family: poppins_medium;
+	font-size: 13px;
+	color: #e5e5e5;
+	text-transform: uppercase;
+	margin-top: 42px;
+}
+
+/*counter part css ends here*/
+
+
+/*blog part css starts here*/
+
+#blog {
+	padding: 85px 0px 110px 0px;
+	background: #fff;
+}
+
+#blog .blog_post {
+	margin-top: 82px;
+}
+
+#blog .blog_post .blog_post_img {
+	width: 100%;
+	height: 277px;
+	background: #888888;
+	border-radius: 5px;
+	position: relative;
+}
+
+#blog .blog_post h4 {
+	font-family: poppins_medium;
+	font-size: 18px;
+	color: #333333;
+	margin: 18px 0px 18px 0px;
+}
+
+#blog .blog_post .View_blog a {
+	font-family: montserrat_reg;
+	font-size: 15px;
+	color: #333333;
+	padding: 13px 46px 14px 25px;
+	background: #ffffff;
+	border-radius: 50px;
+	box-shadow: 2px 4px 16px -6px #c1c1c1;
+	transition: 0.3s;
+}
+
+#blog .blog_post .View_blog a:hover {
+	color: #ffffff;
+	background: #3333335c;
+	transition: 0.3s;
+}
+
+#blog .blog_post .View_blog i {
+	font-size: 15px;
+	color: #333333;
+	margin-left: -42px;
+}
+
+#blog .blog_post .View_blog {
+	margin-top: 39px;
+}
+
+#blog .blog_post .post {
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#blog .blog_post .post:hover .blog_post_overlay {
+	display: block;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+#blog .blog_post_overlay i {
+	font-size: 18px;
+	color: #fff;
+	padding: 20px 20px 20px 20px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -144%);
+	box-shadow: 0 0 8px 0px #eeeeeea3;
+}
+
+#blog .blog_post_overlay {
+	display: none;
+
+}
+
+/*blog part css ends here*/
+
+
+/*contact part css starts here*/
+
+#contact {
+	padding: 81px 0px 105px 0px;
+}
+
+#contact form {
+	padding: 53px 0px;
+}
+
+#contact input {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #666666;
+	width: 100%;
+	background: #fff;
+	border: 0px;
+	padding: 7px 0px 8px 21px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px 3px #0000000d;
+}
+
+#contact textarea {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #666666;
+	width: 100%;
+	background: #fff;
+	border: 0px;
+	padding: 7px 0px 8px 21px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px 3px #0000000d;
+}
+
+#contact form a {
+	font-family: montserrat_reg;
+	font-size: 15px;
+	color: #ffffff;
+	background: #333333;
+	padding: 16px 31px 13px 30px;
+	border-radius: 50px;
+	transition: 0.3s
+}
+
+#contact form a:hover {
+	color: #ffffff;
+	opacity: 0.4;
+	transition: 0.3s
+}
+
+#contact .send_btn {
+	padding: 25px 0px;
+}
+
+#contact h4 {
+	font-family: poppins_reg;
+	font-size: 18px;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+#contact p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #666666;
+	margin-bottom: 2px;
+}
+
+#contact .contact_add {
+	padding: 24px 0px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+}
+
+#contact .contact_add:hover {
+	border: 1px solid transparent;
+	box-shadow: 0 0 50px -25px #333;
+	transition: 0.3s;
+}
+
+/*contact part css ends here*/
+
+
+/*footer part css starts here*/
+
+footer {
+	background: #363636;
+	padding: 130px 0px 97px 0px;
+}
+
+footer .social {
+	margin-bottom: 62px
+}
+
+footer i {
+	font-size: 28px;
+	color: #fff;
+	margin-right: 55px;
+}
+
+footer i:hover {
+	opacity: 0.4;
+	transition: 0.3s
+}
+
+footer h5,
+p {
+	font-family: Source_Sans_Pro_reg;
+	font-size: 18px;
+	color: #999999;
+	line-height: 30px;
+}
+
+footer span {
+	color: #fa4251;
+}
+
+/*footer part css ends here*/
+
+
+/*back to top part starts here*/
+
+#back_to_top i {
+	font-size: 20px;
+	color: #888;
+	line-height: 42px;
+	padding: 0px 15px 0px 15px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	border: 2px solid #888;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#back_to_top i:hover {
+	color: #ffffff;
+	background: #888;
+	border: 2px solid #888;
+}
+
+#button.show {
+	opacity: 1;
+	visibility: visible
+}
+
+/*back to top part ends here*/
+
+
+/*responsive part starts here*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	#banner {
+		padding: 200px 0px;
+	}
+
+	footer i {
+		margin-right: 52px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	header {
+		padding-bottom: 10px
+	}
+
+	#banner {
+		padding: 200px 0px;
+	}
+
+	#portfolio .first {
+		margin-top: 30px;
+	}
+
+	#portfolio img {
+		width: 100%;
+	}
+
+	#portfolio .portfolios .overlay i {
+		margin: 83px 0px;
+	}
+
+	footer i {
+		margin-right: 52px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	#banner {
+		padding: 150px 0px 100px 0px;
+	}
+
+	#banner h1 {
+		font-size: 38px;
+	}
+
+	#banner p br,
+	#about img,
+	#testimonial p span.one,
+	#testimonial p span.two {
+		display: none;
+	}
+
+	#testimonial p {
+		padding: 0px;
+	}
+
+	#portfolio .first {
+		margin-top: 30px;
+	}
+
+	#portfolio img {
+		width: 100%;
+	}
+
+	footer i {
+		margin-right: 44px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+	header {
+		padding-bottom: 10px
+	}
+
+	header .navbar {
+		padding: 0px
+	}
+
+	#banner {
+		padding: 150px 0px 100px 0px;
+	}
+
+	#banner h1 {
+		font-size: 38px;
+	}
+
+	#banner p {
+		font-size: 21px;
+	}
+
+	#banner a {
+		margin-right: 20px;
+	}
+
+	#banner p br,
+	#about img,
+	#testimonial p span.one,
+	#testimonial p span.two {
+		display: none;
+	}
+
+	#about,
+	#resume,
+	#testimonial,
+	#portfolio,
+	#counter,
+	#blog,
+	#container,
+	footer {
+		padding-top: 67px;
+	}
+
+	footer {
+		padding-top: 25px;
+	}
+
+	footer {
+		padding-bottom: 0px;
+	}
+
+	#about a {
+		margin: 39px auto 0 auto;
+	}
+
+	#testimonial p {
+		padding: 0px;
+	}
+
+	#portfolio .first {
+		margin-top: 30px;
+	}
+
+	#portfolio img {
+		width: 100%;
+	}
+
+	#portfolio .portfolios .overlay i {
+		margin: 76px 0px;
+	}
+
+	#counter p {
+		margin-top: 9px
+	}
+
+	footer i {
+		margin-right: 14px;
+		font-size: 17px
+	}
+
+	footer .social {
+		margin-bottom: 25px
+	}
+
+	footer h5,
+	p {
+		font-size: 15px;
+		line-height: 17px;
+	}
+}
+
+/*responsive part ends here*/
