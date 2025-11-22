@@ -1,11 +1,7 @@
-let p = document.createElement("p");
-p.textContent = "its a project";
+let p = document.querySelector("p");
+p.style.color = "red";
+p.style.textTransform = "capitalize";
 
-document.querySelector("body").prepend(p);
-// document.body.append(p);
-document.body.appendChild(p);
-
-
-// document.querySelector("a").remove();
-let body = document.querySelector("body");
-body.removeChild(document.querySelector("a"));
+// p.classList.add("red");
+// p.classList.remove("red");
+p.classList.toggle("red");
