@@ -5,14 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.red {
-			color: red;
-			background-color: wheat;
+		.text{
+			color: rgb(255, 255, 255);
+			background-color: rgb(250, 49, 49);
 		}
 	</style>
 </head>
 <body>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius consequuntur, quasi minus error ipsam molestias nulla dolor veritatis! Natus deserunt eius saepe accusantium facilis autem maiores fugiat dolores alias?</p>
+	<div id="form">
+		<label>what's your birth year?</label><br>
+		<input type="number" id="bdate" placeholder="e.g. 2000" value=""><br><br>
+		<button class="calc">Click Me!</button>
+	</div>
+	<div class="result"></div>
 	
 	<script src="js/script.js"></script>
 </body>
