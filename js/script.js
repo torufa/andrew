@@ -18,4 +18,5 @@ result.addEventListener("click",function(e) {
     let final = tYear-bYear;
 
     show.innerHTML = `<i>Congratulations! You've experienced your ${final} years of life<i>`;
-})
+});
+
