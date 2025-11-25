@@ -1,16 +1,12 @@
-let h2 = document.querySelector("h2");
-h2.addEventListener("click", function(){
-    h2.style.backgroundColor = "yellow";
+let inp = document.querySelector("form input:nth-child(2)");
+inp.addEventListener("input", function(value){
+    console.log(value.data);
 })
 
-let btn = document.querySelector("button");
-btn.addEventListener("dblclick", function () {
-    btn.style.backgroundColor = "red";
+//stoping the backspace null
+let inpt = document.querySelector("input");
+inpt.addEventListener("input", function (value){
+    if(value.data !== null){
+        console.log(value.data);
+    }
 })
-
-//to remove you've to make a particular function first or might take the function at the first senario
-function dbl(){
-    btn.style.backgroundColor = "red";
-}
-//btn.addEventListener("dblclick", dbl);
-btn.removeEventListener("dblclick", dbl);
