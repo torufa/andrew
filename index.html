@@ -5,16 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.one{
-			font-size: 18px;
+		html,body{
+			background-color: #222;
+			height: 100%;
+			margin: 0;
+		}
+		.cls{		
+			height: 100%;	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.cls input{
+			display: none;
+		}
+		.extra{
+			font-family: "monospace";
+			font-size: 54px;
+			text-align: center;
+			color: #fff;
+			padding: 55px 100px;
+			background-color: #00BFFF;
+			border-radius: 35px 35px;
+		}
+		.extra:hover{
+			background-color: #1E90FF;
 		}
 	</style>
 </head>
 <body>
-	<form action="">
-		<input type="text">
-		<input type="text">
-	</form>
+	<div class="cls">
+		<input type="file" id="main">
+		<div class="extra">
+			Upload file
+		</div>
+	</div>
+
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,12 +1,12 @@
-let inp = document.querySelector("form input:nth-child(2)");
-inp.addEventListener("input", function(value){
-    console.log(value.data);
-})
+let main = document.querySelector("#main");
+let extra = document.querySelector(".extra");
 
-//stoping the backspace null
-let inpt = document.querySelector("input");
-inpt.addEventListener("input", function (value){
-    if(value.data !== null){
-        console.log(value.data);
+extra.addEventListener("click", function (value){
+    main.click();
+});
+main.addEventListener("change", function(value){
+    let fileName = value.target.files[0];
+    if(fileName){
+        extra.innerText = fileName.name;
     }
-})
+});
