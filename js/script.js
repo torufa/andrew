@@ -32,4 +32,8 @@ form.addEventListener("submit", function (value) {
 
    dtls.appendChild(card);
 
+   if(inpts.tytpe !== "submit"){
+      inpts.value == "";
+   }
+
 })
