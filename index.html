@@ -6,40 +6,69 @@
 	<title>Document</title>
 	<style>
 		html,body{
-			background-color: #222;
+			background-color: #0D0D0D;
 			height: 100%;
 			margin: 0;
 		}
-		.cls{		
-			height: 100%;	
-			display: flex;
-			justify-content: center;
-			align-items: center;
+		form{			
+			padding: 50px;
 		}
-		.cls input{
-			display: none;
-		}
-		.extra{
+		input{
+			display: block;
 			font-family: "monospace";
-			font-size: 54px;
-			text-align: center;
+			font-size: 25px;
+			padding: 10px 20px;
+			background-color: #00C8FF;
 			color: #fff;
-			padding: 55px 100px;
-			background-color: #00BFFF;
-			border-radius: 35px 35px;
+			border: 0px;
+			margin: 10px;
+			border-radius: 20px;
 		}
-		.extra:hover{
-			background-color: #1E90FF;
+		input::placeholder{
+			color: #fff;
 		}
+		.btn{
+			background-color: #009ADE;
+			margin-top: 30px;
+		}
+
+		.dtls{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card{
+			width: 300px;
+			padding: 20px;
+			color: white;
+			text-align: center;
+			box-shadow: 1px 1px 16px -6px rgb(179 222 230 / 20%);
+			margin: 50px;
+			border-radius: 18px;
+			font-size: 20px;
+			background: #111;
+		}
+		.profile{
+			width: 100px;
+			height: 100px;
+			margin: auto;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 50px;
+		}
+		
 	</style>
 </head>
 <body>
-	<div class="cls">
-		<input type="file" id="main">
-		<div class="extra">
-			Upload file
-		</div>
-	</div>
+	<form>
+		<input type="text" placeholder="Profile Picture">
+		<input type="text" placeholder="Name">
+		<input type="text" placeholder="Designation">
+		<input type="text" placeholder="about">
+		<input type="submit" class="btn" placeholder="Submit">
+	</form>
 
 	<script src="js/script.js"></script>
 </body>
