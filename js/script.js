@@ -1,5 +1,18 @@
-let ul = document.querySelector('ul');
+//event bubbling - goes to its child too
+let main = document.querySelector(".main");
+let nav = document.querySelector(".nav");
+// nav.addEventListener("click", function (e) {
+//    alert("clicked");
+// })
 
-ul.addEventListener("click", function (e) {
-   e.target.classList.toggle("lt");
+//event capturing - goes to its parents
+let btn = document.querySelector("button");
+btn.addEventListener("click", function (e){
+   console.log("btn clicked");
+});
+nav.addEventListener("click", function (e){
+   console.log("nav clicked");
+});
+main.addEventListener("click", function (e){
+   console.log("main clicked");
 })
