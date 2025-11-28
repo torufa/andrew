@@ -1,5 +1,5 @@
-let box = document.querySelector(".box");
-window.addEventListener("mousemove", function (value) {
-   box.style.top = value.clientY + "px";
-   box.style.left = value.clientX + "px";
+let ul = document.querySelector('ul');
+
+ul.addEventListener("click", function (e) {
+   e.target.classList.toggle("lt");
 })
