@@ -5,75 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Validation Practice</title>
-
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background: #f9f9f9;
-			padding: 40px;
-		}
-
-		form {
-			width: 350px;
-			background: #fff;
-			padding: 20px;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			display: flex;
-			flex-direction: column;
-			gap: 16px;
-		}
-
-		.error {
-			color: red;
-			font-size: 14px;
-			display: none;
-		}
-
-		input {
-			padding: 10px;
-			font-size: 16px;
-		}
-
-		button {
-			padding: 10px;
-			background: #007bff;
-			color: white;
-			border: none;
-			cursor: pointer;
-			font-size: 16px;
-			border-radius: 6px;
-		}
-
-		button:hover {
-			background: #0056b3;
-		}
-		/* Make toggle icon appear inside password field */
-		#togglePassword {
-			cursor: pointer;
-			font-size: 18px;
-			user-select: none; /* prevent text selection */
-		}
-
-	</style>
 </head>
 
-<body>
-	<form id="myForm">
-		<h2>Practice Validation Form</h2>
-
-		<input autocomplete="off" type="text" id="name" placeholder="Full Name">
-		<div class="error" id="nameError">Name must be more than 2 characters</div>
-
-		<input autocomplete="off" type="email" id="email" placeholder="Email">
-		<div class="error" id="emailError">Enter a valid email</div>
-
-		<br><span style="color: maroon" id="togglePassword">show</span>
-		<input type="password" id="password" placeholder="Password">
-		<div class="error" id="passwordError">Password must be strong</div>
-
-		<button type="submit">Submit</button>
-	</form>
+<body style="background-color: #111;">
+	
 
 
 	<script src="js/script.js"></script>
