@@ -1,18 +1,17 @@
-//event bubbling - goes to its child too
-let main = document.querySelector(".main");
-let nav = document.querySelector(".nav");
-// nav.addEventListener("click", function (e) {
-//    alert("clicked");
-// })
+let inp = document.querySelector("input");
+let form = document.querySelector('form');
 
-//event capturing - goes to its parents
-let btn = document.querySelector("button");
-btn.addEventListener("click", function (e){
-   console.log("btn clicked");
-});
-nav.addEventListener("click", function (e){
-   console.log("nav clicked");
-});
-main.addEventListener("click", function (e){
-   console.log("main clicked");
+let check = document.querySelector(".check");
+let hide = document.querySelector(".hide")
+
+
+
+form.addEventListener("submit", function (dtls) {
+    dtls.preventDefault();
+   let inpCheck = inp.value.length;
+   if(inpCheck <= 2){
+    hide.style.display = "initial";
+   }else{
+    hide.style.display = "none";
+   }
 })
