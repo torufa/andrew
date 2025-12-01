@@ -1,19 +1,19 @@
-let bc = setInterval(() => {
-    console.log("flower");
-}, 2000);
-clearInterval(bc);
+let bar = document.querySelector(".bar");
+let progress = document.querySelector(".progress");
+let btn = document.querySelector("button");
 
-let ab = setTimeout(() => {
-    console.log("hello world");
-}, 1000);
+btn.addEventListener("click", (e)=> {
+    e.preventDefault();
 
 
-let count = 5;
-let time = setInterval(() => {
-    if(count >= 1){
-    count--;
-    console.log(count);
-    }else{
-        clearInterval(time);
-    }
-}, 1000);
+    let count = 0;
+    let prog = setInterval(()=>{
+        if(count <= 100) {
+            count++;
+            progress.style.width = `${count}%`;
+        }else{
+            clearInterval(prog);
+        }
+    },20)
+
+})
