@@ -1,2 +1,3 @@
-let dark = document.querySelector(".dark");
-if(dak)
+localStorage.setItem("theme", "dark");
+localStorage.removeItem("one");
+localStorage.getItem("two");
