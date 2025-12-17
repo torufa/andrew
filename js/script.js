@@ -1,7 +1,13 @@
-document.cookie = "some text";
-document.cookie = "some = text";
-document.cookie = "hellow = hello"; //making another cookie
-
-localStorage.setItem("red", JSON.stringify({a : "dress codes", b : "yet it's a joke"}));
-let data = JSON.parse(localStorage.getItem("red"));
-console.log(data);
+function theme() {
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+    }else{
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+    }
+}
+theme();
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", ()=>{
+    theme();
+})
