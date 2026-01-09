@@ -1,13 +1,9 @@
-function theme() {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-    }else{
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-    }
-}
-theme();
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", ()=>{
-    theme();
+let task = document.querySelector(".task");
+let btn = document.querySelector('button');
+let h2 = document.querySelector('h2');
+let inp = document.querySelector('input');
+
+btn.addEventListener('click', ()=>{
+    task.style.display = 'inherit';
+    h2.innerText = inp.value;
 })
